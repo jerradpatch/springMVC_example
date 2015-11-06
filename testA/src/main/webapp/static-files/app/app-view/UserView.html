@@ -1,0 +1,36 @@
+
+
+<div style='margin-right: auto;margin-left: auto'>
+	<button ng-click="vm.GetAllUserData()"> Get User Data</button>
+    <table style='margin-right: auto;background-color: white;border-radius: 7px;border-color: 
+    	whitesmoke;border-width: 4px;box-shadow: 8px 6px 17px #D6D6D6;'>
+    	<tr>
+			<td>id</td>
+			<td>fname</td>
+			<td>lname</td>
+			<td>username</td>
+			<td>latitude</td>
+			<td>longitude</td>
+			<td>gender</td>
+			<td>age</td>
+			<td>comments</td>
+			<td>likes</td>
+			<td>dislikes</td>
+			<td>retweets</td>		
+		</tr>
+		<tr ng-repeat="x in vm.userData">
+			<td>{{ x.id }}</td>
+			<td>{{ x.fname }}</td>
+			<td>{{ x.lname }}</td>
+			<td>{{ x.username }}</td>
+			<td>{{ x.latitude }}</td>
+			<td>{{ x.longitude }}</td>
+			<td>{{ x.gender }}</td>
+			<td>{{ x.age }}</td>
+			<td>{{ x.comments }}</td>
+			<td>{{ x.likes }}</td>
+			<td>{{ x.dislikes }}</td>
+			<td>{{ x.retweets }}</td>		
+		</tr>
+	</table>
+</div>
